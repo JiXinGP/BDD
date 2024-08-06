@@ -1,0 +1,113 @@
+[
+  {
+    "description": "  Como usuario, quiero poder agregar, completar y eliminar tareas para organizar mis actividades.",
+    "elements": [
+      {
+        "description": "",
+        "id": "lista-de-tareas;agregar-una-nueva-tarea",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Agregar una nueva tarea",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que estoy en la página de la lista de tareas",
+            "match": {
+              "location": "features\\step_definitions\\todo_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2183599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "agrego una nueva tarea con el título \"Estudiar BDD\"",
+            "match": {
+              "location": "features\\step_definitions\\todo_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver la tarea \"Estudiar BDD\" en la lista",
+            "match": {
+              "location": "features\\step_definitions\\todo_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "lista-de-tareas;completar-una-tarea",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Completar una tarea",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "que tengo una tarea \"Estudiar BDD\" en la lista",
+            "match": {
+              "location": "features\\step_definitions\\todo_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "marco la tarea \"Estudiar BDD\" como completada",
+            "match": {
+              "location": "features\\step_definitions\\todo_steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "la tarea \"Estudiar BDD\" debería estar marcada como completada",
+            "match": {
+              "location": "features\\step_definitions\\todo_steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "lista-de-tareas",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Lista de Tareas",
+    "tags": [],
+    "uri": "features\\todo.feature"
+  }
+]
